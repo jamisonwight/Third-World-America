@@ -1,0 +1,22 @@
+:root
+
+  --retro-thumbnail
+    filter: saturation(1) grayscale(40%)
+    border-radius: .4rem
+    transition: 0.2s ease-out
+  
+    &:hover
+      filter: grayscale(0%)
+      opacity: .9
+
+    @media (--small-viewport)
+      width: 100%
+      margin: 0 auto
+    @media (--phone-viewport)
+      width: 100%
+      margin: 0 auto
+    @media (--tablet-viewport)
+      width: 100%
+      margin: 0 auto
+
+      

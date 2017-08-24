@@ -1,0 +1,80 @@
+.banner-bg
+  background-image: url(../assets/banner.jpg)
+  background-size: cover
+
+.banner 
+  .banner-teepee
+    position: absolute
+    left: 0
+    right: 0
+    margin: auto
+
+  .banner-heading
+    text-align: center
+    width: 100%
+
+    h1 
+      font-family: "Oswald", sans-serif
+      position: absolute
+      left: 0
+      right: 0
+      margin: auto
+      font-weight: bold
+      color: var(--retroWhite)
+      text-transform: uppercase
+
+
+@media (--small-viewport) 
+  .banner-bg
+    height: 33rem
+
+  .banner-teepee
+    width: 18rem
+    bottom: 52rem
+
+  .banner-heading
+    h1 
+      bottom: 28rem
+      font-size: 1.8rem
+
+
+@media (--phone-viewport) 
+  .banner-bg
+    height: 55rem
+
+  .banner-teepee
+    width: 30rem
+    bottom: 49rem
+
+  .banner-heading
+    h1 
+      bottom: 10rem
+      font-size: 3rem
+
+
+@media (--tablet-viewport)
+  .banner-bg
+    height: 70rem
+
+  .banner-teepee
+    width: 40rem
+    bottom: 52rem
+
+  .banner-heading
+    h1
+      bottom: 0
+      font-size: 4.5rem
+
+
+@media (--desktop-viewport)
+  .banner-bg
+    background-position: center
+
+  .banner-teepee
+    width: 40rem
+    bottom: 53rem
+
+  .banner-heading
+    h1
+      bottom: 0
+      font-size: 6rem

@@ -1,0 +1,78 @@
+:root 
+
+  // Utilites
+  --u-center
+    position: relative
+    width: 100%
+    lost-center: 100%
+
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: auto
+      max-width: 100%
+
+
+  // Color themes
+  --retroCyan-theme 
+    background: var(--retroCyan)
+    color: var(--retroDark)
+
+  --retroWhite-theme 
+    background: var(--retroWhite)
+    color: var(--retroDark)
+
+  --retroYellow-theme 
+    input[type="text"]
+      border: 1.0rem solid var(--retroYellow)
+  
+
+  // Main UI theme
+  --roundUI-theme
+    font-family: 'Oswald', serif
+
+    h4 
+      color: var(--retroWhite)
+      font-size: 1.5rem
+
+    input[type="text"]
+      border-radius: 10px
+      padding: 1.5rem
+      background: transparent
+    
+    label
+      position: relative
+      width: 100%
+
+      input
+        &:checked + .radio__icon
+          background: var(--retroDark)
+          border: none
+          width: 2.8rem
+          height: 2.8rem
+
+      input[type="radio"]
+        visibility: hidden
+
+      .radio__icon
+        position: absolute
+        top: -.5rem
+        left: .2rem
+        width: 2.5rem
+        height: 2.5rem
+        margin: auto
+        background: var(--retroYellow)
+        border: 0.2rem solid var(--retroDark)
+        border-radius: 50% 
+        &:hover
+          cursor: pointer
+
+      span
+        font-family: "Roboto", serif
+        margin-left: 2.5rem
+        font-size: 1.5rem
+        font-weight: 600
+        text-transform: uppercase
+
+

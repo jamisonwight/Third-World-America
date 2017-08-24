@@ -1,0 +1,69 @@
+.section-posts
+  @apply --retroWhite-theme
+
+  .post-filter
+    width: 100%
+    position: fixed
+    left: 0
+    padding-bottom: 5rem
+    background: var(--retroYellow)
+    z-index: 5
+    animation: postFilter .5s ease-out
+
+
+    .post-filter-name,
+    .post-filter-category
+      @apply --roundUI-theme
+
+      h1, h4
+        color: var(--retroDark)
+
+      input[type="text"]
+        width: 100%
+        border: 0.5rem solid var(--retroDark)
+      
+    .post-filter-category
+      .category--radio
+        display: inline-block
+
+        label
+          padding-right: 4rem
+
+
+  .section-post-list
+    @apply --retroWhite-theme
+
+    article
+      @apply --grid-third
+
+      @media (--small-viewport)
+        lost-center: 100%
+        padding: 1rem
+
+    h1
+      @apply --retro-page-title
+
+
+    .post-content
+      padding: 1rem 0
+
+      img 
+        @apply --retro-thumbnail
+
+      h3
+        @apply --retro-post-title
+
+      p 
+        @apply --retro-post-content
+
+      .post-categories
+        font-family: "Oswald", serif
+        font-weight: 400
+        margin-right: .5rem
+
+        &::after
+          content: "/"
+
+
+
+
